@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FetchPokemonsPod_Example' do
+  pod 'FetchPokemonsPod', :path => '../'
+
+  target 'FetchPokemonsPod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

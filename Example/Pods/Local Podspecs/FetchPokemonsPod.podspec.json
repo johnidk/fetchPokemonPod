@@ -18,10 +18,6 @@
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "FetchPokemonsPod/Classes/**/*",
-  "dependencies": {
-    "Kingfisher": [
-
-    ]
-  }
+  "source_files": "FetchPokemonsPod/Classes/**",
+  "public_header_files": "Pod/Classes/**/*.h"
 }

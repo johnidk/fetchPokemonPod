@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0224A0FCAD5D37B235201324 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0224A0FCAD5D37B235201324 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		223420F570EBB700057F47C8 /* Pods_FetchPokemonsPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchPokemonsPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* FetchPokemonsPod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchPokemonsPod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		7082D5499C0C70A985A9FDF3 /* Pods-FetchPokemonsPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchPokemonsPod_Example.release.xcconfig"; path = "Target Support Files/Pods-FetchPokemonsPod_Example/Pods-FetchPokemonsPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8DAD20FECA249D8CAF510CA8 /* Pods-FetchPokemonsPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchPokemonsPod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FetchPokemonsPod_Tests/Pods-FetchPokemonsPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9470D81C8EF79A9E167BCC74 /* Pods-FetchPokemonsPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchPokemonsPod_Example.debug.xcconfig"; path = "Target Support Files/Pods-FetchPokemonsPod_Example/Pods-FetchPokemonsPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C4F3001608C36795EFD317DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C9F47D3647AD002AE167284B /* FetchPokemonsPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FetchPokemonsPod.podspec; path = ../FetchPokemonsPod.podspec; sourceTree = "<group>"; };
+		C4F3001608C36795EFD317DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C9F47D3647AD002AE167284B /* FetchPokemonsPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FetchPokemonsPod.podspec; path = ../FetchPokemonsPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DF69D9D8808A23A0FD7E0E92 /* Pods_FetchPokemonsPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchPokemonsPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F66485043471DD23FD60FF /* Pods-FetchPokemonsPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchPokemonsPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-FetchPokemonsPod_Tests/Pods-FetchPokemonsPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				8DAD20FECA249D8CAF510CA8 /* Pods-FetchPokemonsPod_Tests.debug.xcconfig */,
 				F5F66485043471DD23FD60FF /* Pods-FetchPokemonsPod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +314,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FetchPokemonsPod_Example/Pods-FetchPokemonsPod_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FetchPokemonsPod/FetchPokemonsPod.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FetchPokemonsPod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

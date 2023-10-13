@@ -1,5 +1,5 @@
 import XCTest
-import FetchPokemonsPod
+//import FetchPokemonsPod
 
 class Tests: XCTestCase {
     
